@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MW1 Clicker Game: Minecraft</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./click.js" defer type="module"></script>    
+</head>
+<body>
+    <div class="flex top-section">
+        <div class="grid-2" style="width:35%; height:80vh;">
+            <div class="flex" style="width:100%;">
+                <p class="title">Minecraft Clicker Game</p>
+            </div>
+            <div class="flex" style="width:100%;">
+                <img src="./items/wooden_pickaxe.png" class="pickaxe" alt="_Pickaxe">
+            </div>
+        </div>
+        <div class="grid-2" style="width:35%; height:80vh">
+            <div class="flex" style="width:100%;"></div>
+            <div class="flex" style="width:100%;">
+                <img src="./items/dirt.png" class="block" alt="_Block">
+            </div>
+        </div>
+        <div class="flex upgrade-container" style="width:30%; height:80vh">
+            <p class="blocks">Blocks: </p>
+            <button class="block-upgrade">Block Upgrade: 0</button>
+            <button class="pickaxe-upgrade">Pickaxe Upgrade: 0</button>
+            <button class="dimension">Dimension Hop: 0</button>
+        </div>
+    </div>
+    <div class="flex bot-section">
+        <div class="flex enchantment-box"  style="width:30%; height:20vh">
+            <img class="enchantments" src="https://vignette.wikia.nocookie.net/minecraft/images/c/ca/Enchantment_Table.png/revision/latest?cb=20111012173932" alt="e">
+        </div>
+        <div class="grid-2a" style="width:60%; height:20vh">
+            <div class="flex" style="width:100%;">
+                <h1 class="villager-label">villagers</h1>
+            </div>
+            <div class="flex villager-box" style="width:100%;">
+                <img src="https://static.fandomspot.com/images/06/41176/10-villager-blacksmith-skin-minecraft.jpg" alt="v" class="villager1">
+                <img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/5/50/Desert_Farmer.png" alt="v" class="villager2">
+                <img src="https://yt3.ggpht.com/a/AATXAJzb6mpAW_ACVkkjsb00kBykj5jshrGz1mSlxVY-=s900-c-k-c0xffffffff-no-rj-mo" alt="v" class="villager3" alt="v" class="villager3">
+            </div>
+        </div>
+        <div class="flex" style="width:10%; height:20vh"></div>
+    </div>
+    <div class="enchantment-popup">
+        <h1 class="echant-title">echant</h1>
+        <button class="fortune">
+            <img src="https://vignette.wikia.nocookie.net/minecraft/images/8/8f/EnchantedBookNew.gif/revision/latest?cb=20200428051252" alt="" class="fortune-img">
+            <p class="enchantment-label" id="fortune-label">Fortune</p>
+        </button>
+        <button class="efficiency">
+            <img src="https://vignette.wikia.nocookie.net/minecraft/images/8/8f/EnchantedBookNew.gif/revision/latest?cb=20200428051252" alt="" class="efficiency-img">
+            <p class="enchantment-label" id="efficiency-label">Efficiency</p>
+        </button>
+        <button class="rarity">
+            <img src="https://vignette.wikia.nocookie.net/minecraft/images/8/8f/EnchantedBookNew.gif/revision/latest?cb=20200428051252" alt="" class="rarity-img">
+            <p class="enchantment-label" id="rarity-label">Rarity</p>
+        </button>
+        <button class="enchant-x">X</button>
+    </div>
+</body>
+</html>
